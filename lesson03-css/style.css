@@ -1,0 +1,15 @@
+/*External CSS*/
+h1 {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: q none;
+  gap: 20px;
+}
