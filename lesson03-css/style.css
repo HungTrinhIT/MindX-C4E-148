@@ -1,15 +1,73 @@
 /*External CSS*/
-h1 {
+/* #logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+} */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
   font-size: 40px;
   color: red;
   text-decoration: underline;
   font-weight: bold;
 }
 
-ul {
+.nav-list {
+  /* Layout theo chiều ngang(dọc) */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: q none;
-  gap: 20px;
+  gap: 52px;
+
+  list-style: none;
+}
+
+/* .nav-list li:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.nav-list li:first-child:hover {
+  color: red;
+} */
+
+/* .nav-list li:nth-child(1) {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+} */
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.active:hover {
+  color: red;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.partner__item {
+  height: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
 }
