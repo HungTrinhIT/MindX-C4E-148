@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="./style.css">
 
     <!-- 2.CSS - Internal CSS -->
+    <!-- CSS Selector: tag name -->
     <style>
-        /* h1 {
+        h1 {
             font-size: 40px;
-            color: red;
-            text-decoration: underline;
+            color: blue;
+            text-decoration: line-through;
             font-weight: bold;
-        } */
+        }
     </style>
 </head>
 
 <body>
     <!-- Header section -->
-    <header>
+    <header style="">
         <div>
-            <!-- 1. CSS - Inline CSS -->
-            <!-- <h1 style="font-size: 40px;color: red;text-decoration: underline;font-weight: bold;">Shayna</h1> -->
-            <h1 class="logo">Shayna</h1>
+            <!-- 1. CSS - Inline CSS 
+            Priority class < style
+            -->
+            <h1 class="text-orange" style="font-size: 40px;color: red;text-decoration: underline;font-weight: bold;">
+                Shayna</h1>
+
         </div>
 
         <!-- Navigation -->

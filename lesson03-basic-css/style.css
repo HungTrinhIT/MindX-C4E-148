@@ -6,6 +6,12 @@
   font-weight: bold;
 } */
 
+/* CSS Selector:
+  1. tag name
+  2. id => #
+  3. class => .
+*/
+
 header {
   display: flex;
   align-items: center;
@@ -70,4 +76,8 @@ header {
 
 .text-red {
   color: red;
+}
+
+.text-orange {
+  color: orange !important;
 }
