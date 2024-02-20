@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quản lý sinh viên</title>
+    <style>
+      body {
+        font-size: 40px;
+        padding: 0;
+      }
+      table,
+      th,
+      td {
+        border: 4px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        margin-left: 0;
+      }
+      td {
+        text-align: left;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 936px;
+        /* height: 713px; */
+      }
+      div {
+        align-items: center;
+        text-align: center;
+        display: block;
+      }
+      #ID {
+        width: 240px;
+        height: 74px;
+      }
+      #name {
+        width: 256px;
+      }
+      #Mark {
+        width: 243px;
+      }
+      #Section {
+        width: 245px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <!-- heading -->
+        <p style="margin: 0;">QUẢN LÝ SINH VIÊN</p>
+        <!-- table -->
+        <thead>
+          <tr>
+            <th id="ID"><b>ID</b></th>
+            <th id="name"><b>Họ và tên</b></th>
+            <th id="Mark"><b>Điểm</b></th>
+            <th id="Section"><b>Xếp loại</b></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4">Khóa A</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Trần Tiến Tài</td>
+            <td>7</td>
+            <td rowspan="2">Khá</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Phạm Minh Khoa</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td colspan="4">Khóa B</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Trần Văn Hưng</td>
+            <td>5</td>
+            <td>Trung Bình</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Đỗ Đức Thành</td>
+            <td>10</td>
+            <td>Giỏi</td>
+          </tr>
+          <tr>
+            <th colspan="2"><b>TỔNG CỘNG</b></th>
+            <th><b>7.5</b></th>
+            <th><b>Khá</b></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

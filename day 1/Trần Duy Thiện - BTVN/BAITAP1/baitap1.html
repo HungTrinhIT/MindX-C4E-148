@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Example</title>
+  <style>
+    /* CSS cho bảng */
+    table {
+      width: 500px; /* Đặt chiều rộng của bảng */
+      border-collapse: collapse;
+      margin-left: auto; /* Căn giữa theo chiều ngang */
+      margin-right: auto; /* Căn giữa theo chiều ngang */
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border: 1px solid #000; /* Định dạng đường viền */
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+    .center-text {
+      text-align: left;
+    }
+    p{
+      font-family: 'Times New Roman', Times, serif;
+    }
+    img{
+      width: 200px;
+    }
+    th.column-width {
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th colspan="2">GIÁO TRÌNH TIN HỌC VĂN PHÒNG</th>
+    </tr>
+    <tr>
+      <th rowspan="6" class="column-width"><img src="anh3.jpg" alt="Mô tả ảnh"></th>
+      <td class="center-text">Tác giả: <i>Phạm Quang Hiển</i></td>
+    </tr>
+    <tr>
+      <td class="center-text">Đồng tác giả: <i>Phạm Phương Hoa</i></td>
+    </tr>
+    <tr>
+      <td class="center-text">Hiệu đính: <i>Hồng Phúc</i></td>
+    </tr>
+    <tr>
+      <td class="center-text">Chủ Biên: <i>Quách Tuấn Ngọc</i></td>
+    </tr>
+    <tr>
+      <td class="center-text">Nhà xuất bản: <b>Nha xuất Thanh Niên</b></td>
+    </tr>
+    <tr>
+      <td class="center-text">Chủ đề: <b>Tin học-Văn phòng</b></td>
+    </tr>
+    <tr>
+      <th colspan="2" class="center-text">
+        <h4>NỘI DUNG CỦA CUỐN</h4>
+          <ul>
+            <li>Giới thiệu tổng quát về MS-EXCEL</li>
+            <li>Các thao tác cơ bản khi sử dụng MS - EXCEL</li>
+            <li>Danh sách phím tắt Excel</li>
+            <li>Trình bày bảng tính</li>
+            <li>SÁCH HỌC EXCEL hướng dẫn các hàm thường dùng</li>
+            <li>Nắm bắt được các lỗi sai thường gặp khi sử dụng hàm</li>
+            <li>Các thủ thuật nâng cao</li>
+            <li>Biết cách xử lý các lỗi trong quá trình làm việc</li>
+            <li>Các thao tác nâng cao thống kê, công thức mảng, định dang</li>
+          </ul>
+          <p><i>-Tất cả các kiến thức về MS-EXCEL được hệ thống đầy đủ và dễ dàng họa tập</i></p>
+      </th>
+    </tr>
+    <tr>
+     <th colspan="2" class="center-text">
+      <p> Giá Bán:<b>90.000VND/Cuốn</b></p>
+    </th>
+    </tr>
+  </table>
+</body>
+</html>

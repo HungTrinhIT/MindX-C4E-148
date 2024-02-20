@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        margin-left: 0;
+      }
+      p{
+        margin: 0 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 600px">
+      <!-- tilte -->
+      <tr>
+        <th colspan="2">GIÁO TRÌNH TIN HỌC VĂN PHÒNG</th>
+      </tr>
+      <tr>
+        <!-- picture -->
+        <th rowspan="6">
+          <img style="width: 180px" src="/Images/7B872-1.webp" alt="" />
+        </th>
+        <td>Tác giả: Phạm Quang Hiển</td>
+      </tr>
+      <tr>
+        <td>Đồng tác giả: Phạm Phương Hoa</td>
+      </tr>
+      <tr>
+        <td>Hiệu Đính: Đồng Phúc</td>
+      </tr>
+      <tr>
+        <td>Chủ Biên: Quách Tuấn Ngọc</td>
+      </tr>
+      <tr>
+        <td>Nhà xuất bản: <b>Nhà xuất Thanh Niên</b></td>
+      </tr>
+      <tr>
+        <td>Chủ đề <b>Tin học-Văn phòng</b></td>
+      </tr>
+      <!-- detail -->
+      <tr>
+        <td colspan="2">
+            <p style="margin: 0px 1px;">
+                <b>NỘI DUNG CỦA CUỐN</b>
+                <ul>
+                    <li>Giới thiệu tổng quát về MS-EXCEl</li>
+                    <li>Các thao tác cơ bản khi sử dụng MS-EXCEL</li>
+                    <li>Dahc sách phím tắt Excel</li>
+                    <li>Trình bày bảng tính</li>
+                    <li>SÁCH HỌC EXCEL hướng dẫn các hàm thường dùng</li>
+                    <li>Nắm bắt được các lỗi sai thường gặp khi sử dụng hàm</li>
+                    <li>Các thủ thuật nâng cao</li>
+                    <li>Biết cách xử lí các lỗi trong quá trình làm việc</li>
+                    <li>Các thao tác nâng cao thống kê, công thức mảng, định dạng</li>
+                </ul>
+                <i><u>- Tất cả các kiến thức về MS-EXCEL được hệ thống đầy đủ và dễ dàng học tập</u></i>
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Giá bán: <b>90.000 VND/Cuốn</b></td>
+      </tr>
+    </table>
+    <hr />
+    <form action="">
+      <table style="text-align: left">
+        <thead>
+          <tr>
+            <th colspan="2">FORM ĐĂNG KÝ MUA SÁCH</th>
+          </tr>
+          <tr>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Tên của bạn:</th>
+            <th>
+              <input type="text" style="border: none" placeholder="Họ và Tên" />
+            </th>
+          </tr>
+          <tr>
+            <th>Số điện thoại:</th>
+            <th>
+              <input type="text" style="border: none" placeholder="SDT" />
+            </th>
+          </tr>
+          <tr>
+            <th style="padding: 20px 1px">Địa chỉ:</th>
+            <th>
+              <input type="text" style="border: none" placeholder="Địa chỉ" />
+            </th>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <th>
+              <input type="text" style="border: none" placeholder="Email" />
+            </th>
+          </tr>
+          <tr>
+            <th>Số lượng muốn mua:</th>
+            <th><input type="text" style="border: none" /></th>
+          </tr>
+          <tr>
+            <th colspan="2"><input type="button" value="Mua ngay" /></th>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

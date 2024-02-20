@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background video {
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    margin-top: -240px;
+}
+
+.container .wapper {
+    display: flex;
+    width: 500px;
+    height: 270px;
+    border: 3mm ridge black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: rgba(0, 0, 0, 0.500);
+}
+
+.container .wapper .avatar img {
+    width: 180px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.container .wapper .content {
+    width: 100%;
+}
+
+.container .wapper .content .heading {
+    text-align: center;
+    margin: 10px;
+}
+
+.container .wapper .content .heading h2 {
+    color: rgb(0, 238, 255);
+}
+
+.container .wapper .content .solial {
+    text-align: center;
+    margin: 15px;
+}
+
+.container .wapper .content .solial a {
+    padding: 6px;
+    padding: 4px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    transition: 0.8s;
+}
+
+.container .wapper .content .solial a:hover {
+    background: white;
+    color: black;
+    transition: 0.8s;
+}
+
+.container .wapper .content .individual {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.container .wapper .content .individual ul li {
+    list-style: none;
+    margin: 5px 0px 5px 0px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container .wapper .content .individual ul li strong {
+    margin-left: 2px;
+    color: rgb(228, 228, 228);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container .wapper .content .individual .click {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .wapper .content .individual .click button {
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: linear-gradient(to left bottom, rgb(49, 46, 129), rgb(129, 140, 248), rgb(49, 46, 129));
+    }
+
+.container .wapper .content .individual .click button:active {
+    transform: scale(0.9);
+}
+
+.container .wapper .content .individual .click button:hover {
+    background: linear-gradient(to right bottom, rgb(49, 46, 129), rgb(129, 140, 248), rgb(49, 46, 129));
+}
+
+.container .contact {
+    display: none;
+    width: 250px;
+    padding: 10px;
+    border: 3mm ridge black;
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(220, 220, 220);
+}
+
+.container .contact form {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container .contact form input {
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    outline: none;
+}
+
+.container .contact form textarea {
+    width: 95%;
+    height: 130px;
+    padding: 12px;
+    border: 2px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
+}
+
+.container .contact form .btn {
+    display: flex;
+}
+
+.container .contact form .btn button {
+    width: 40%;
+    height: 30px;
+    margin: 5px 5px 5px 13px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.container .contact form .btn button:active {
+    transform: scale(0.9);
+}
