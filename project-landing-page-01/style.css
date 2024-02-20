@@ -1,0 +1,135 @@
+/*External CSS*/
+/* #logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+} */
+
+/* CSS Selector:
+  1. tag name
+  2. id => #
+  3. class => .
+*/
+body {
+  background-color: #e8e1da;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.logo {
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-list {
+  /* Layout theo chiều ngang(dọc) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+
+  list-style: none;
+}
+
+/* .nav-list li:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.nav-list li:first-child:hover {
+  color: red;
+} */
+
+/* .nav-list li:nth-child(1) {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+} */
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.active:hover {
+  color: red;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.partner__item {
+  height: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange !important;
+}
+
+/* Teacher section */
+#teacher {
+  margin-top: 40px;
+}
+
+.teacher-item {
+  width: 295px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.teacher-content {
+  display: flex;
+
+  /* space-around space-between flex-start flex-end */
+  justify-content: center;
+  gap: 30px;
+}
+
+.teacher-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.teacher-info {
+  padding: 20px;
+}
+
+.teacher-info p:first-child {
+  font-size: 20px;
+}
+
+.teacher-info p:last-child {
+  color: #9b948e;
+}
