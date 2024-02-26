@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DEMO DESKTOP FIRST */
+/* width > 1024px */
+.desktop-first {
+  width: 100%;
+  height: 300px;
+  background-color: bisque;
+}
+
+/* Override */
+/*   768px < width <= 1024px */
+@media only screen and (max-width: 1024px) {
+  .desktop-first {
+    background-color: aquamarine;
+  }
+}
+
+/*   300px < width <= 768px */
+@media only screen and (max-width: 768px) {
+  .desktop-first {
+    background-color: brown;
+  }
+}
+
+/* width <= 300px */
+@media only screen and (max-width: 300px) {
+  .desktop-first {
+    background-color: blue;
+  }
+}
+
+/* ------------------ */
+/* DEMO MOBILE FIRST */
+/* ------------------ */
+
+/*  width < 768px  */
+.mobile-first {
+  margin-top: 40px;
+  background-color: black;
+  height: 250px;
+}
+
+/*  768px <= width < 1024px */
+@media only screen and (min-width: 768px) {
+  .mobile-first {
+    background-color: chartreuse;
+  }
+}
+
+/*  width >= 1024px */
+@media only screen and (min-width: 1024px) {
+  .mobile-first {
+    background-color: red;
+  }
+}
+
+/* 
+  @media not|only mediatype and (mediafeature: value) {
+    CSS-Code;
+  } 
+  1. media: all | screen | speech | print => screen là hay dùng nhất
+  2. mediafeature
+    + max-width => desktop first 
+    + min-width => mobile first
+
+*/
+
+/* 
+    Áp dụng khi kích thước chiều ngang màn hình nhỏ hơn hoặc bằng 1024px
+    width <= 1024px
+    => Khi đó 1024px sẽ là break point
+*/
