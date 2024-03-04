@@ -63,3 +63,62 @@ console.log( employee);
 
 employee = null;
 console.log( employee);
+
+
+// TOÁN TỬ
+console.log('Toán tử toán học')
+console.log(3 + 2);
+console.log(3 - 2);
+console.log(3 * 2);
+console.log(3 / 2);
+console.log(3 ** 2);
+console.log(7 % 4);
+
+let i = 5;
+i++ // i = i + 1
+i-- // i = i - 1
+console.log(i)
+
+// Toán tử gán
+console.log('Toán tử gán')
+let x = 3;
+let y = 5;
+// x += y; // x = x + y => x;
+// x -= y; // x = x - y => x;
+// x *= y; // x = x * y => x;
+// x /= y; // x = x / y => x;
+// x %= y; // x = x % y => x;
+x **= y; // x = x + y => x;
+console.log(x, y);
+
+console.log('Toán nối chuỗi')
+let str_x = "Hellow"
+let str_y = "World"
+
+console.log(str_x + ' my ' + str_y + ", I'm " + x + ' years old')
+
+console.log('Toán tử so sánh')
+console.log(2 == '2');
+console.log(2 === '2'); // Kiểm tra cả giá trị
+console.log(2 != 3); // Khác
+console.log(2 <= 2);
+
+console.log('Toán tử logic')
+// true: Khi các mệnh đề đều đúng, ngược lại false
+// true && true ==> true
+// true && false ==> false
+// false && false ==> false
+// false && false ==> false
+console.log((2 == 2) && (3 > 2)) // Toán tử và
+
+
+// false: Tất cả các mệnh đề đều sai, ngược lại đúng
+// false || false ==> false
+// false || true ==> true
+// true || true ==> true
+// true || false ==> true
+console.log((2 > 2) || (3 > 5)) // Toán tử hoặc
+
+console.log(!false)
+
+
