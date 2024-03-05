@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Loopstudios landing page</title>
+</head>
+
+<body>
+    <section id="heading" class="bgrHeading">
+        <div class="displayFlex justifyBetween headingPadding alignCenter">
+            <img src="./assets/images/logo.svg" alt="">
+            <div class="block">
+                <div class="nav displayFlex justifyEnd alignCenter">
+                    <div class="itemnav">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="itemnav">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="itemnav">
+                        <a href="#">Events</a>
+                    </div>
+                    <div class="itemnav">
+                        <a href="#">Products</a>
+                    </div>
+                    <div class="itemnav">
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btnMenu" onclick="showMobileMenu()">
+                <img class="hidden" src="./assets/images/icon-hamburger.svg" alt="">
+            </button>
+        </div>
+
+        <div class="immersive">
+            <p>immersive experiences
+            <p>that</p> deliver</p>
+        </div>
+
+        <div id="mobileMenu" class="mobileMenu">
+            <div class="displayFlex justifyBetween alignCenter" style="padding: 1rem;">
+                <img src="./assets/images/logo.svg" alt="">
+                <button class="btnClose" onclick="closeMobileMenu()">
+                    <img src="./assets/images/icon-close.svg" alt="">
+                </button>
+            </div>
+            <div class="navmobileMenu">
+                <div>
+                    <a href="#">About</a>
+                </div>
+                <div class="my-4 md:mx-4">
+                    <a href="#">Careers</a>
+                </div>
+                <div>
+                    <a href="#">Events</a>
+                </div>
+                <div class="my-4 md:mx-4">
+                    <a href="#">Products</a>
+                </div>
+                <div>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="padingLR6rem  min-height800">
+        <img class="hidden image-interactiveMobile" src="./assets/images/mobile/image-interactive.jpg" alt="">
+        <div class="displayFlex alignEnd justifyStart positionRelative">
+            <img class="block image-interactivedesktop" src="./assets/images/desktop/image-interactive.jpg" alt="">
+            <div class="divInteractive">
+                <h3 class="uppercase text-[30px] md:mb-[46px] tracking-[6px] text-center">the leader in interactive vr
+                </h3>
+                <p class="text-center mt-6 mx-6 text-gray-500 font-medium mb-12">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Delectus quo deleniti, soluta quae excepturi exercitationem modi quisquam eligendi
+                    unde
+                    totam mollitia corporis eaque fuga nobis in reprehenderit odio placeat saepe?</p>
+            </div>
+        </div>
+    </section>
+    <section class="sectionOurCreations">
+        <h3>our creations</h3>
+        <button class="block btnSeeAll">see
+            all</button>
+    </section>
+
+    <section class="sectionGridview">
+        <div class="positionRelative">
+            <div class="hidden"><img style="margin-top: 84px;" class=" imgmobilegrid"
+                    src="./assets/images/mobile/image-deep-earth.jpg" alt=""></div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-deep-earth.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">deep earth</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" src="./assets/images/mobile/image-night-arcade.jpg" alt="">
+            </div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-night-arcade.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">
+                night arcade</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" src="./assets/images/mobile/image-soccer-team.jpg" alt="">
+            </div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-soccer-team.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">
+                soccer team var</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" style="width: 100%;"
+                    src="./assets/images/mobile/image-grid.jpg" alt=""></div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-grid.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">
+                the grid</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" style="width: 100%;"
+                    src="./assets/images/mobile/image-from-above.jpg" alt="">
+            </div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-from-above.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">
+                from up above vr</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" style="width: 100%;"
+                    src="./assets/images/mobile/image-pocket-borealis.jpg" alt="">
+            </div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-pocket-borealis.jpg"
+                    alt=""></div>
+            <p class="textdesktopgrid">
+                pocket borealis</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" style="width: 100%;"
+                    src="./assets/images/mobile/image-curiosity.jpg" alt=""></div>
+            <div class="block"><img class="imgdesktopgrid" src="./assets/images/desktop/image-curiosity.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">
+                the curiosity</p>
+        </div>
+
+        <div class="positionRelative ">
+            <div class="hidden"><img class=" imgmobilegrid" style="width: 100%;"
+                    src="./assets/images/mobile/image-fisheye.jpg" alt=""></div>
+            <div class="block"><img class=" imgdesktopgrid" src="./assets/images/desktop/image-fisheye.jpg" alt="">
+            </div>
+            <p class="textdesktopgrid">
+                make it fisheye</p>
+        </div>
+        <button class="hidden btnSeeAllgrid">see all</button>
+    </section>
+
+    <div class="footer">
+        <div class="displayFlex justifyAround">
+            <img class="footerLogo" src="./assets/images/logo.svg" alt="">
+            <div class="footerMedia block">
+                <div class=" displayFlex alignCenter justifycenter">
+                    <a href="#">
+                        <img class="logomedia" src="./assets/images/icon-facebook.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="logomedia" src="./assets/images/icon-twitter.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="logomedia" src="./assets/images/icon-pinterest.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="logomedia" src="./assets/images/icon-instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerMenu">
+            <div class="listItemfooterMenu">
+                <div>
+                    <a href="#" class="hover:opacity-80">About</a>
+                </div>
+                <div>
+                    <a href="#" class="hover:opacity-80">Careers</a>
+                </div>
+                <div>
+                    <a href="#" class="hover:opacity-80">Events</a>
+                </div>
+                <div>
+                    <a href="#" class="hover:opacity-80">Products</a>
+                </div>
+                <div>
+                    <a href="#" class="hover:opacity-80">Support</a>
+                </div>
+            </div>
+            <span class="block">&copy;2021 Loopstudios. All rights
+                reserved.</span>
+        </div>
+
+
+        <div class="displayFlex alignCenter justifycenter footerMedia footerMenuMobile">
+            <a href="#">
+                <img class="logomedia" src="./assets/images/icon-facebook.svg" alt="">
+            </a>
+
+            <a href="#">
+                <img class="logomedia" src="./assets/images/icon-twitter.svg" alt="">
+            </a>
+
+            <a href="#">
+                <img class="logomedia" src="./assets/images/icon-pinterest.svg" alt="">
+            </a>
+
+            <a href="#">
+                <img class="logomedia" src="./assets/images/icon-instagram.svg" alt="">
+            </a>
+        </div>
+        <span class="hidden">&copy;2021 Loopstudios. All rights
+            reserved.</span>
+
+    </div>
+</body>
+
+</html>

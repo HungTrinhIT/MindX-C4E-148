@@ -1,0 +1,352 @@
+html {
+    font-family: system-ui;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+    margin: 0;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyEnd {
+    justify-content: end;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.headingPadding {
+    padding: 1.5rem 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bgrHeading {
+    background-image: url(./assets/images/mobile/image-hero.jpg);
+    min-height: 600px
+}
+
+button {
+    background-image: none;
+    border: none;
+}
+
+.btnMenu,
+.btnClose {
+    background-color: transparent;
+}
+
+.hidden {
+    display: block;
+}
+
+.block {
+    display: none;
+}
+
+.immersive {
+    color: white;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: start;
+    padding: 1rem;
+    border: 4px solid white;
+    margin-top: 10rem;
+    margin-left: 44px;
+    margin-right: 1rem;
+}
+
+.immersive p:first-child {
+    width: 90%;
+}
+
+.mobileMenu {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.navmobileMenu {
+    padding-top: 6rem;
+    padding-left: 2rem;
+}
+
+.navmobileMenu div {
+    margin-top: 1rem;
+}
+
+.navmobileMenu a {
+    opacity: 0.8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    text-decoration: inherit;
+}
+
+.image-interactiveMobile {
+    width: 90%;
+    margin-top: 84px;
+    margin-bottom: 46px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+.alignEnd {
+    align-items: end;
+}
+
+.justifyStart {
+    justify-content: start;
+}
+
+.justifycenter {
+    justify-content: center;
+}
+
+.justifyAround {
+    justify-content: space-around;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.image-interactivedesktop {
+    width: 50%;
+    margin-top: 84px;
+    margin-bottom: 46px;
+}
+
+.divInteractive h3 {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.divInteractive p {
+    font-weight: 500;
+    text-align: center;
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
+    color: rgb(107 114 128);
+
+}
+
+.sectionOurCreations h3 {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.btnSeeAll {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.75rem 3.5rem;
+    border: 2px solid rgb(107 114 128);
+    margin-left: 50%;
+}
+
+.imgmobilegrid {
+    margin-bottom: 46px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0px);
+}
+
+.imgdesktopgrid {
+    margin-bottom: 46px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+.textdesktopgrid {
+    color: white;
+    font-size: 32px;
+    line-height: 36px;
+    width: 150px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 6rem;
+    left: 10%;
+}
+
+.btnSeeAllgrid {
+    padding: 0.75rem 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid rgb(107 114 128);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+.footer {
+    padding: 12px 12px 12px 0;
+    background-color: black;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 2.5rem;
+}
+
+.listItemfooterMenu {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: inherit;
+}
+
+.listItemfooterMenu div {
+    margin-bottom: 1rem;
+}
+
+.footer span {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.logomedia {
+    width: 36px;
+    margin-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .bgrHeading {
+        background-image: url(./assets/images/desktop/image-hero.jpg);
+        padding: 0 3rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .nav {
+        margin-left: 500px;
+    }
+
+    .itemnav {
+        margin-left: 1rem;
+    }
+
+    .itemnav a {
+        font-size: 18px;
+        color: white;
+        text-decoration: inherit;
+    }
+
+    .immersive {
+        width: 40%;
+    }
+
+    .min-height800 {
+        min-height: 800px
+    }
+
+    .padingLR6rem {
+        padding: 0 6rem;
+    }
+
+    .divInteractive {
+        padding: 2rem;
+        background-color: white;
+        width: 600px;
+        right: 7rem;
+        position: absolute;
+    }
+
+    .divInteractive h3 {
+        margin-bottom: 46px;
+    }
+
+    .sectionOurCreations {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: -60px;
+    }
+
+    .sectionGridview {
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-auto-flow: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .textdesktopgrid {
+        left: 20%;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .footerLogo {
+        align-self: center;
+    }
+
+    .footerMenu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .listItemfooterMenu {
+        display: flex;
+        align-items: center;
+    }
+
+    .listItemfooterMenu div {
+        margin-right: 1rem;
+    }
+
+    .footerMenuMobile {
+        display: none;
+    }
+}
