@@ -20,6 +20,19 @@
 
     Bài 6: Sắp xếp mảng theo thứ tự tăng dần
 
-    Bài 7 Sắp xếp mảng theo thứ tự giảm dần
+    Bài 7: Sắp xếp mảng theo thứ tự giảm dần
+
+    Bài 8:
+    const employees = [
+        { name: "John", age: 21, salary: 23000 },
+        { name: "Steve",  age: 32, salary: 40000 },
+        { name: "Martin",  age: 16, salary: 2700 },
+        { name: "Cristiano Ronaldo",  age: 39, salary: 100000 },
+        { name: "Messi",  age: 37, salary: 500 }
+    ]
+
+        a. Tính tổng lương nhân viên.
+        b. Có bao nhiêu nhân viên lớn hơn 20 tuổi
+        c. Có bao nhiêu nhân viên lớn hơn 25 tuổi và thu nhập nhỏ hơn 10000 dollars
 
 */
