@@ -62,6 +62,21 @@ const classes = [
     2. Thông báo cho phụ huynh học sinh xếp hạng gì theo cú pháp sau đây
     
     "Học sinh <ABC> xếp loại: <XYZ>"
+
+    Yêu cầu:
+    1. Viết Function tính GPA
+        + Input: math, chemistry, english
+        + Output: GPA
+    
+    2. Viết function Xếp loại:
+        + Input GPA
+        + Output: "Giỏi" | "Khá" | "Trung bình" | "Yếu"
+    
+    3. Viết function xếp loai học viên
+        main()
+        input: mảng lớp học
+        logic: thông báo cho phụ huynh
+        console.log("Học sinh <ABC> xếp loại: <XYZ>")
     
 */
 
@@ -87,11 +102,16 @@ for (let i = 0; i < names.length; i++) {
     Logic: a + b
     Output: là tổng của a và b
 */
-function sum(a, b) {
-  const result = a + b;
 
-  return result;
+function sum(a, b) {
+  return a + b;
 }
+
+// Anonymous function
+const minus = function (a, b) {
+  return a - b;
+};
+console.log(minus(10, 2));
 
 const sumBetweenForAndFive = sum(4, 5);
 console.log('sumBetweenForAndFive', sumBetweenForAndFive);
@@ -100,9 +120,27 @@ console.log('sumBetweenForAndFive', sumBetweenForAndFive);
 // Input: a, b, sign = "+" , "-" , "*", "/"
 // Output: Giá trị của phép tính đó
 
-function calculator(a, b, sign) {
-    let result;
-    //Your code here
-
-    return result
+function calculator(a, b, operator) {
+  switch (operator) {
+    case '+':
+      return a + b;
+    case '-':
+      return a - b;
+    case '*':
+      return a * b;
+    case '/':
+      return a / b;
+    default:
+      return 'Operator is not valid';
+  }
 }
+
+console.log(calculator(10, 5, '+')); //  14
+console.log(calculator(10, 5, '-')); // 5
+console.log(calculator(10, 5, '*')); // 50
+console.log(calculator(10, 5, '/')); // 2
+console.log(calculator(10, 5, '!')); // 2
+
+// Scope: global scope, function scope, block
+// hoisting
+// => Sự khác biệt giữa var, const và let (*)
