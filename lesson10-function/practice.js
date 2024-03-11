@@ -34,7 +34,7 @@ const mindXClass = [
     fullname: 'Nguyễn Văn A',
     mathScore: 10,
     englishScore: 8,
-    chemistry: 7,
+    chemistryScore: 7,
     gender: 'male',
     address: {
       street: 'Hai Bà Trưng',
@@ -46,7 +46,7 @@ const mindXClass = [
     fullname: 'Leo Messi',
     mathScore: 5,
     englishScore: 10,
-    chemistry: 6,
+    chemistryScore: 6,
     gender: 'male',
     address: {
       street: '12',
@@ -58,7 +58,7 @@ const mindXClass = [
     fullname: 'Cristiano Ronaldo',
     mathScore: 10,
     englishScore: 10,
-    chemistry: 10,
+    chemistryScore: 10,
     gender: 'male',
     address: {
       street: 'Bạch Đằng',
@@ -70,7 +70,7 @@ const mindXClass = [
     fullname: 'Lê Thị B',
     mathScore: 6,
     englishScore: 4,
-    chemistry: 2,
+    chemistryScore: 2,
     gender: 'female',
     address: {
       street: '12',
@@ -80,13 +80,44 @@ const mindXClass = [
   },
 ];
 
-function calculateGPA(math, chemistry, english) {}
+function calculateGPA(math, chemistry, english) {
+  return ((math + chemistry + english) / 3).toFixed(1);
+}
 
-function classifyStudent(gpa) {}
+function classifyStudent(gpa) {
+  if (gpa >= 8) {
+    return 'Giỏi';
+  } else if (gpa >= 6.5) {
+    return 'Khá';
+  } else if (gpa >= 5) {
+    return 'Trung bình';
+  } else {
+    return 'Yếu';
+  }
+}
 
-function main(classes) {}
+function main(students) {
+  // Dùng for of khi không quan tâm đến chỉ số index
+  for (const student of students) {
+    const studentGPA = calculateGPA(
+      student.mathScore,
+      student.englishScore,
+      student.chemistryScore
+    );
+    const ranking = classifyStudent(studentGPA);
 
-main();
+    console.log(
+      studentGPA,
+      ' - Học sinh ',
+      student.fullname,
+      ' xếp loại - ',
+      ranking
+    );
+  }
+}
+
+main(mindXClass);
+
 // console.log("Học sinh <ABC> xếp loại: <XYZ>")
 // console.log("Học sinh <ABC> xếp loại: <XYZ>")
 // console.log("Học sinh <ABC> xếp loại: <XYZ>")
@@ -104,8 +135,21 @@ main();
 */
 
 function freeShipping(cart) {
-  // Your code here
+  let totalAmountOfCart = 0;
+
+  for (let key in cart) {
+    const price = cart[key];
+    totalAmountOfCart += price;
+  }
+
+  return totalAmountOfCart >= 50;
 }
+
+console.log(freeShipping({ Shampoo: 5.99, 'Rubber Ducks': 15.99 }));
+console.log(freeShipping({ 'Flatscreen TV': 399.99 }));
+console.log(
+  freeShipping({ Monopoly: 11.99, 'Secret Hitler': 35.99, Bananagrams: 13.99 })
+);
 
 // BÀI 3
 /*
@@ -137,6 +181,17 @@ const GUEST_LIST = {
   Norman: 'England',
   Sam: 'Argentina',
 };
+
 function greeting(name) {
-    
+  const isStudentExistInDict = GUEST_LIST.hasOwnProperty(name);
+
+  const studentGreeting =
+    "Hi! I'm " + name + ", and I'm from " + GUEST_LIST[name];
+  const guestGreeting = "Hi! I'm a guest.";
+
+  return isStudentExistInDict ? studentGreeting : guestGreeting;
 }
+
+console.log(greeting('Randy'));
+console.log(greeting('Sam'));
+console.log(greeting('Monti'));
