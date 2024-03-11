@@ -1,5 +1,5 @@
 // Quản lý lớp học MindX C4E 148
-
+// BÀI 1
 /*
       1. Xếp loại học sinh của lớp C4E JS 148 
           GPA = (math + english + chemistry) / 3;
@@ -91,3 +91,52 @@ main();
 // console.log("Học sinh <ABC> xếp loại: <XYZ>")
 // console.log("Học sinh <ABC> xếp loại: <XYZ>")
 // console.log("Học sinh <ABC> xếp loại: <XYZ>")
+
+// BÀI 2
+/*
+    Viết một hàm, để xác định xem đơn đặt hàng này có đủ điểu kiện để miễn phí giao hàng hay không. 
+    Miễn phí khi và chỉ khi:
+        - Tổng chi phí của các mặt hàng ≥ $50.00
+
+    freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }) ➞ false
+    freeShipping({ "Flatscreen TV": 399.99 }) ➞ true
+    freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }) ➞ true
+*/
+
+function freeShipping(cart) {
+  // Your code here
+}
+
+// BÀI 3
+/*
+    Giả sử bạn có một object lưu trữ thông tin, 
+    của các học sinh đến từ nhiều quốc gia khác nhau dưới dạng key-value pairs như sau:
+
+    const GUEST_LIST = {
+        Randy: "Germany",
+        Karla: "France",
+        Wendy: "Japan",
+        Norman: "England",
+        Sam: "Argentina"
+    }
+
+    Hãy viết một function nhận vào `name` của một người trong `**GUEST_LIST**` và trả về như sau:
+        - "Hi! I'm [name], and I'm from [country]."
+        - Nếu `name` **không tồn tại** trong  `**GUEST_LIST**` , return: :   "Hi! I'm a guest."
+
+
+    greeting("Randy") ➞ "Hi! I'm Randy, and I'm from Germany."
+    greeting("Sam") ➞ "Hi! I'm Sam, and I'm from Argentina."
+    greeting("Monti") ➞ "Hi! I'm a guest."
+*/
+
+const GUEST_LIST = {
+  Randy: 'Germany',
+  Karla: 'France',
+  Wendy: 'Japan',
+  Norman: 'England',
+  Sam: 'Argentina',
+};
+function greeting(name) {
+    
+}
