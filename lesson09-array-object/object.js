@@ -44,3 +44,20 @@ if (product.hasOwnProperty('color')) {
 } else {
   console.log('Sản phẩm này KHÔNG CÓ thuộc tính color');
 }
+
+// THAM CHIẾU TRONG OBJECT
+// alice, bob, john.doe
+const studentAlice = {
+  name: 'Alice',
+  age: 20,
+};
+
+const studentBob = studentAlice;
+
+console.log('\n\nAlice info:', studentAlice);
+console.log('Bob info:', studentBob);
+
+studentBob.name = 'Bob';
+
+console.log('\n\nAlice info:', studentAlice);
+console.log('Bob info:', studentBob);

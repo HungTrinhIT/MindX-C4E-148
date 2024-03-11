@@ -70,3 +70,26 @@ console.log('🚀 ~ sliceArrayOne:', sliceArrayOne);
 // Đảo ngược mảng
 const reversedArray = sliceArrayOne.reverse();
 console.log('🚀 ~ reversedArray:', reversedArray);
+
+// const numbers = [1, 10 , 20, 100, 80, 6, 7]
+// insert n value at k position
+// input: numbers , n  , k
+// output: new numbers array [1, 10 ,-5, 20, 100, 80, 6, 7]
+
+// THAM CHIÊU TRONG MẢNG (ARRAY)
+const toyotaPrices = ['$10000', '$30000', '$500', '$24000'];
+const hondaPrices = toyotaPrices;
+
+console.log('Giá ban đầu');
+console.log('Giá xe Toyota:', toyotaPrices);
+console.log('Giá xe Honda:', hondaPrices);
+
+toyotaPrices[2] = '$50000';
+toyotaPrices.push('$1.000.000');
+hondaPrices.reverse();
+hondaPrices.push('$1234');
+
+console.log('\nGiá xe Toyota:', toyotaPrices);
+console.log('\nGiá xe Honda:', hondaPrices);
+
+console.log(nums);
