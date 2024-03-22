@@ -82,3 +82,55 @@ timezoneElement.innerHTML = timezone;
 footerNode.appendChild(timezoneElement);
 
 // localStorage.clear();
+
+// Timer
+
+console.log('Before setTimeOut'); // 1
+
+const timer = setTimeout(function() {
+  console.log('During setTimeOut'); // 2
+}, 300);
+
+clearTimeout(timer);
+
+console.log('After setTimeOut'); // 3
+
+
+const countTime = document.getElementById('count-time');
+let date  = new Date();
+let min = date.getMinutes();
+let sec = date.getSeconds();
+
+const formatTimer = (num) => {
+  if (num < 10) {
+    return '0' + num;
+  }
+  return num;
+}
+
+setInterval(function() {
+  sec = sec + 1;
+  if (sec >= 60) {
+    sec = 0;
+    min = min + 1;
+  }
+
+  if (sec < 10) {
+    
+  }
+
+  countTime.innerHTML = `Current time: ${formatTimer(min)} : ${formatTimer(sec)}`
+}, 100)
+
+
+// Event Bubbling hay Event Capturing
+const p = document.getElementById('myP')
+const div = document.getElementById('myDiv')
+
+div.addEventListener('click', function() {
+  console.log('div clicked')
+}, true)
+
+p.addEventListener('click', function() {
+  console.log('p clicked')
+}, true)
