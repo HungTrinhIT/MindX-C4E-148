@@ -9,22 +9,20 @@ Viết một function Javascript in ra các số từ 1 đến 15 **trên 1 dòn
 **Output**: là một **string** thõa yêu cầu đề bài như trên. */
 
 function fizzBuzz() {
-    let res = '';
-    for (let index = 1; index <= 15; index++) {
-        if (index % 3 === 0 && index % 5 === 0) {
-            res += 'Fizz'
-        } else if (index % 5 === 0) {
-            res += "Buzz"
-        } else if (index % 3 === 0) {
-            res += "FizzBuzz"
-        }
-
+  let res = '';
+  for (let index = 1; index <= 15; index++) {
+    if (index % 3 === 0 && index % 5 === 0) {
+      res += 'Fizz';
+    } else if (index % 5 === 0) {
+      res += 'Buzz';
+    } else if (index % 3 === 0) {
+      res += 'FizzBuzz';
     }
-    return res;
-
+  }
+  return res;
 }
 
-console.log(fizzBuzz())
+console.log(fizzBuzz());
 
 /* ### Bài 2 Count Vowels
 
@@ -39,15 +37,14 @@ Mỗi `test case` đúng: `5 points`
 **Output**: Số lượng vowels (có xử lý ngoại lệ) */
 
 function countVowels(str) {
-    const vowels = ['e', 'u', 'o', 'a', 'i']
-    let count = 0;
-    for (let char of str.toLowerCase()) {
-        if (vowels.includes(char)) {
-            count++;
-        }
-
+  const vowels = ['e', 'u', 'o', 'a', 'i'];
+  let count = 0;
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
     }
-    return count;
+  }
+  return count;
 }
 
 console.log(countVowels('Viet Nam vo dich. Malaysia tuoi gi :))'));
@@ -74,18 +71,17 @@ Ví dụ:
 */
 
 function removeDuplicateFromArray(arr) {
-    if (!Array.isArray(arr) || arr.length === 0) return;
+  if (!Array.isArray(arr) || arr.length === 0) return;
 
-    let output = [];
-    for (let index = 0; index < arr.length; index++) {
-        const element = arr[index];
-        if (!output.includes(element)) {
-            output.push(element)
-        }
+  let output = [];
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+    if (!output.includes(element)) {
+      output.push(element);
     }
+  }
 
-    return output;
-
+  return output;
 }
 
 console.log(removeDuplicateFromArray([1, 1, -1, 3, 5, 10]));
@@ -109,63 +105,61 @@ Nếu:
 
 /* Cach 1 */
 function isPalindrome(str) {
-    let newString = '';
-    for (let index = str.length - 1; index >= 0; index--) {
-        newString += str[index];
-
-    }
-    return str === newString;
-
+  let newString = '';
+  for (let index = str.length - 1; index >= 0; index--) {
+    newString += str[index];
+  }
+  return str === newString;
 }
 
 /* Cach 2 */
-function isPalindrome(str) { //abcde -> a b c d e -> e d c b a-> edcba
-    let newStr = str.split('').reverse().join('');
-    return str === newStr;
-
+function isPalindrome(str) {
+  //abcde -> a b c d e -> e d c b a-> edcba
+  let newStr = str.split('').reverse().join('');
+  return str === newStr;
 }
 console.log(isPalindrome('moon'));
 console.log(isPalindrome('moom'));
 
 /* bai 5 */
-const employeesInfo = [{
-        name: "David",
-        workingTime: 98,
-        salary: 10
-    },
-    {
-        name: "Luiz",
-        workingTime: 78,
-        salary: 20
-    },
-    {
-        name: "Silva",
-        workingTime: 165,
-        salary: 25
-    },
-    {
-        name: "Santos",
-        workingTime: 215,
-        salary: 30
-    },
-    {
-        name: "Alex",
-        workingTime: 143,
-        salary: 28
-    },
+const employeesInfo = [
+  {
+    name: 'David',
+    workingTime: 98,
+    salary: 10,
+  },
+  {
+    name: 'Luiz',
+    workingTime: 78,
+    salary: 20,
+  },
+  {
+    name: 'Silva',
+    workingTime: 165,
+    salary: 25,
+  },
+  {
+    name: 'Santos',
+    workingTime: 215,
+    salary: 30,
+  },
+  {
+    name: 'Alex',
+    workingTime: 143,
+    salary: 28,
+  },
 ];
 
 // Cau a: Viết hàm tính tổng lương công ty phải trả trong 1 tháng
-// Goi y: Luong nhan vien = workingTime * salary 
+// Goi y: Luong nhan vien = workingTime * salary
 function getTotalSalaryOfCompany() {
-    let total = 0;
-    employeesInfo.forEach(employee => {
-        total += employee.workingTime * employee.salary
-    })
-    return total;
+  let total = 0;
+  employeesInfo.forEach((employee) => {
+    total += employee.workingTime * employee.salary;
+  });
+  return total;
 }
 console.log(getTotalSalaryOfCompany(employeesInfo));
-
 
 /* 
 //Cau b: Viet ham tinh luong cua 1 nhan vien bat ki trong danh sach employeesInfo
@@ -184,55 +178,56 @@ console.log(getTotalSalaryOfCompany(employeesInfo));
 	- Co the tach nho logic tinh bonus thanh 1 function rieng => De dang hon.
 */
 
-const employeesInfo2 = [{
-        name: "David",
-        workingTime: 98,
-        salary: 10
-    },
-    {
-        name: "Luiz",
-        workingTime: 78,
-        salary: 20
-    },
-    {
-        name: "Silva",
-        workingTime: 165,
-        salary: 25
-    },
-    {
-        name: "Santos",
-        workingTime: 215,
-        salary: 30
-    },
-    {
-        name: "Alex",
-        workingTime: 143,
-        salary: 28
-    },
+const employeesInfo2 = [
+  {
+    name: 'David',
+    workingTime: 98,
+    salary: 10,
+  },
+  {
+    name: 'Luiz',
+    workingTime: 78,
+    salary: 20,
+  },
+  {
+    name: 'Silva',
+    workingTime: 165,
+    salary: 25,
+  },
+  {
+    name: 'Santos',
+    workingTime: 215,
+    salary: 30,
+  },
+  {
+    name: 'Alex',
+    workingTime: 143,
+    salary: 28,
+  },
 ];
 
 function getTotalSalaryOfEmployee(name) {
-    const employee = employeesInfo2.find(emp => emp.name === name);
-    if (!employee) {
-        return "Nhân viên không tồn tại"
-    }
-    let bonus = 0;
-    if (employee.workingTime >= 150) {
-        bonus = 200;
-    } else if (employee.workingTime >= 100 && employee.workingTime < 150) {
-        bonus = 150;
-    } else if (employee.workingTime >= 50 && employee.workingTime < 100) {
-        bonus = 100;
-    } else {
-        bonus = 50;
-    }
+  const employee = employeesInfo2.find((emp) => emp.name === name);
+  if (!employee) {
+    return 'Nhân viên không tồn tại';
+  }
+  let bonus = 0;
+  if (employee.workingTime >= 150) {
+    bonus = 200;
+  } else if (employee.workingTime >= 100 && employee.workingTime < 150) {
+    bonus = 150;
+  } else if (employee.workingTime >= 50 && employee.workingTime < 100) {
+    bonus = 100;
+  } else {
+    bonus = 50;
+  }
 
-    const salary = employee.workingTime * employee.salary + bonus;
-    return `${employee.name} có mức lương là ${salary}`;
+  const salary = employee.workingTime * employee.salary + bonus;
+  return `${employee.name} có mức lương là ${salary}`;
 }
-console.log(getTotalSalaryOfEmployee("Alex"));
-console.log(getTotalSalaryOfEmployee("Santos"));
-console.log(getTotalSalaryOfEmployee("Eddie"));
+console.log(getTotalSalaryOfEmployee('Alex'));
+console.log(getTotalSalaryOfEmployee('Santos'));
+console.log(getTotalSalaryOfEmployee('Eddie'));
 
 /* ### Bài 6
 
@@ -244,20 +239,19 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 function indexofNumbers(numberList, target) {
-    let numArr = {};
+  let numArr = {};
 
-    for (let index = 0; index < numberList.length; index++) {
-        const number = numberList[index];
-        const result = target - number;
-        if (numArr.hasOwnProperty(result)) {
-            return [numArr[result], index];
-        }
-        numArr[numberList[index]] = index;
-
+  for (let index = 0; index < numberList.length; index++) {
+    const number = numberList[index];
+    const result = target - number;
+    if (numArr.hasOwnProperty(result)) {
+      return [numArr[result], index];
     }
-    return []
-
+    numArr[numberList[index]] = index;
+  }
+  return [];
 }
-console.log(indexofNumbers([3,2,4], 6));
-console.log(indexofNumbers([1,5,4], 6));
-console.log(indexofNumbers([3,8,4], 6));
+
+console.log(indexofNumbers([3, 2, 4], 6));
+console.log(indexofNumbers([1, 5, 4], 6));
+console.log(indexofNumbers([3, 8, 4], 6));
